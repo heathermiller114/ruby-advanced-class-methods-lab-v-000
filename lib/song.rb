@@ -37,7 +37,5 @@ class Song
 
     @@all.detect{|song|song.name = name}
     end
-    result
   end
-
 end
