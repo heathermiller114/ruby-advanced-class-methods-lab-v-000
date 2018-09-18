@@ -47,6 +47,7 @@ class Song
   end
 
   def self.new_from_filename(.mp3)
-    
+    song = self.new
+    song.name = 
 
 end
