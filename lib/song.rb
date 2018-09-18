@@ -48,9 +48,9 @@ class Song
 
   def self.new_from_filename(mp3)
     song = self.new
-    song.name = mp3.split(/-|.mp3/)[1]
+    song.name = mp3.split(/\s-\s|.mp3/)[1]
     binding.pry
-    song.artist_name = mp3.split(/-|.mp3/)[0]
+    song.artist_name = mp3.split(/\s-\s|.mp3/)[0]
   end
 
 end
