@@ -50,6 +50,8 @@ class Song
     song = self.new
     song.name = mp3.split(/\s-\s|.mp3/)[1]
     song.artist_name = mp3.split(/\s-\s|.mp3/)[0]
+    song.save
+    song
   end
 
 end
